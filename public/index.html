@@ -1,89 +1,438 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<!--
+	Resto by GetTemplates.co
+	URL: https://gettemplates.co
+-->
+<html lang="en">
+
+<head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Poseidón tattoo</title>
+    <meta name="description" content="Resto">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.5.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.5.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.5.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/brands.css">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <!-- Fonts -->
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Josefin+Sans:300,400,700">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/whatsapp.css">
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</head>
+<body data-spy="scroll" data-target="#navbar" class="static-layout">
+	
+
+	
+ 	
+	<div class="boxed-page" style="background-image:url('./img/hero-4.png'); background-size: cover; background-repeat: no-repeat;background-position: top;filter:opacity();">
+        <nav id="navbar-header" class="navbar navbar-expand-sm">
+            <div style="width: 100%;" class="d-flex  ">
+                <div class="d-flex flex-row position-absolute" style="width: 100%;left: 0; min-height: 50px; background-color: #fff;">
+                    <a class="cols-12 col-lg-9 col-md-8 col-sm-9 navbar-brand navbar-brand-center d-flex align-items-center p-0 only-mobile " href="/">
+                        <img style="height: 150px; top: -50px; right: 5px;" class="p-0 m-0 position-absolute" src="img/logo.png" alt="">
+                    </a>
+                    <button class="col-3 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="lnr lnr-menu"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-between mt-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex justify-content-between">
+                        <li class="nav-item only-desktop">
+                            <!-- Contenido del elemento en dispositivos de escritorio -->
+                        </li>
+                        <div class="d-flex flex-lg-row flex-column">
+                            <li class="nav-item active mr-lg-4">
+                                <a class="nav-link" style="font-size: 20px;" href="/">Inicio <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item mr-lg-4">
+                                <a class="nav-link" style="font-size: 20px;" href="./nosotros.html">Nosotros</a>
+                            </li>
+                        </div>
+                    </ul>
+                    <a class=" mt-2 navbar-brand navbar-brand-center d-flex align-items-center only-desktop" href="#">
+                        <img style="height: 250px; width: 300px;" src="img/logo.png" alt="">
+                    </a>
+                    <ul class="navbar-nav d-flex justify-content-between">
+                        <div class="d-flex flex-lg-row flex-column">
+                            <li class="nav-item dropdown ml-desktop-4 ml-mobile-0">
+                                <a class="nav-link dropdown-toggle" style="font-size: 20px;" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Productos
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="productos.html?tab=tattoos">Tatuajes</a>
+                                    <a class="dropdown-item" href="productos.html?tab=designs">Diseños</a>
+                                    <a class="dropdown-item" href="productos.html?tab=paintings">Cuadros personalizados</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown ml-desktop-4 ml-mobile-0">
+                                <a class="nav-link" style="font-size: 20px;" href="./reservacion.html">Reservación</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>			
+<div class="hero">
+  <div class="container">
+	<div class="row d-flex align-items-center">
+		<div class="col-lg-12 hero-left align-items-center" >
+		    <h1 class="display-4 mb-5 text-white">Estamos <br>Tatuando !</h1>
+		    <div class="mb-2 d-flex flex-row align-items-center justify-content-center" >
+		    	<a class="btn btn-primary btn-shadow btn-lg" style="min-width: 200px;" href="./productos.html" role="button">Ver galería</a>
+			    <a class="btn btn-icon btn-lg d-none" href="https://player.vimeo.com/video/33110953" data-featherlight="iframe" data-featherlight-iframe-allowfullscreen="true">
+			    	<span class="lnr lnr-film-play"></span>
+			    	Play Video
+			    </a>
+		    </div>
+		   
+		    <ul class="hero-info list-unstyled d-flex align-items-center justify-content-center text-center mb-0">
+		    	<li class="border-right">
+		    		<img class="lnr" style="height: 52px; width: 52px;" src="img/diseños.png" alt="">
+		    		<h5 class="text-white">
+		    			DISEÑOS
+		    		</h5>
+		    	</li>
+		    	<li class="border-right">
+		    		<img class="lnr" style="height: 52px; width: 52px;" src="img/tattoo.png" alt="">
+		    		<h5 class="text-white">
+		    			TATUAJES
+		    		</h5>
+		    	</li>
+		    	<li class="">
+		    		<img class="lnr" style="height: 52px; width: 52px;" src="img/cuadros.png" alt="">
+		    		<h5 class="text-white">
+		    			CUADROS
+		    		</h5>
+		    	</li>
+		    </ul>
+
+	    </div>
+	   
+	    </div>
+	</div>
+  </div>
+</div>		<!-- Welcome Section -->
+<section id="gtco-welcome" class="bg-white section-padding">
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-sm-5 img-bg d-flex shadow align-items-center justify-content-center justify-content-md-end img-2" style="background-image: url(img/localTattoo.png);">
+                    
+                </div>
+                <div class="col-sm-7 py-5 pl-md-0 pl-4">
+                    <div class="heading-section pl-lg-5 ml-md-5">
+                        <span class="subheading">
+                            Nosotros
+                        </span>
+                        <h2>
+                            POSEIDÓN TATTOO
+                        </h2>
+                    </div>
+                    <div class="pl-lg-5 ml-md-5 ">
+                        <p style="margin-top: 100px; margin-bottom: 100px;">
+                            Poseidón Tattoo, tu destino definitivo para el arte corporal y visual en Argentina. 
+                            En nuestro estudio de tatuajes, fusionamos la pasión por el tatuaje con la creatividad 
+                            artística para brindarte diseños únicos y significativos que perdurarán en tu piel para 
+                            siempre. Pero eso no es todo. También ofrecemos la posibilidad de llevar nuestras acuarelas
+                            a tu hogar con cuadros personalizados que reflejen tu estilo y personalidad. 
+                            Nuestro equipo de artistas talentosos está listo para convertir tus ideas en obras de arte,
+                            ya sea en tu piel o en tu pared. Descubre la magia de Poseidón Tattoo y lleva contigo
+                            un pedazo de arte en cada paso que das.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+</section>
+<!-- End of Welcome Section -->		<!-- Special Dishes Section -->
+<section id="gtco-special-dishes" class="bg-grey section-padding">
+    <div class="container">
+        <div class="section-content">
+            <div class="heading-section text-center">
+                <span class="subheading">
+                    servicios
+                </span>
+                <h2>
+                    Nuestros Servicios
+                </h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center py-5">
+                    <h2 class="special-number">01.</h2>
+                    <div class="dishes-text">
+                        <h3><span>Diseños</span><br>A pedido del cliente.</h3>
+                        <p class="pt-3">
+                            En Poseidón Tattoo, creamos diseños personalizados que reflejan 
+                            tu esencia y estilo únicos. Nuestros artistas expertos transformarán 
+                            tus ideas en obras de arte que te conectarán profundamente con cada trazo
+                            y color, ya sea en forma de tatuaje o cuadro acuarela. Tu visión, 
+                            nuestra creatividad.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
+                    <img src="img/boceto.jpg" alt="" class="img-fluid shadow w-100">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
+                    <img src="img/tatuando.jpg" alt="" class="img-fluid shadow w-100">
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2 py-5">
+                    <h2 class="special-number">02.</h2>
+                    <div class="dishes-text">
+                        <h3><span>Tatuajes</span><br>Tatuamos cualquier estilo.</h3>
+                        <p class="pt-3">
+                            En Poseidón Tattoo, dominamos la creación de tatuajes únicos en una variedad
+                             de estilos. Nuestros tatuadores expertos son maestros en el arte del diseño 
+                             personalizado, llevando a cabo desde tradicionales hasta vanguardistas.
+                              Tu piel es nuestro lienzo, y tu estilo es nuestra inspiración!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-6 align-self-center py-5">
+                    <h2 class="special-number">03.</h2>
+                    <div class="dishes-text">
+                        <h3><span>Cuadros</span><br>Pintados en acuarelas.</h3>
+                        <p class="pt-3">Los cuadros pintados con acuarelas de Poseidón Tattoo son verdaderas joyas artísticas. 
+                            Sus obras de animes y series populares son de diferentes tamaños y capturan la esencia de tus personajes favoritos 
+                            de forma única. ¡Una colección imperdible para fans y amantes del arte!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-4 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
+                    <img src="img/cuadros.jpeg" alt="" class="img-fluid shadow w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Special Dishes Section -->		
+<!-- portfolio section -->
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+<section class="portfolio_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <div class="heading-section text-center">
+            <span class="subheading">
+                galeria
+            </span>
+            <h2>
+                Nuestros trabajos
+            </h2>
+        </div>
+      </div>
+      <div class="gallery-tabs">
+        <ul class="tabs mb-2">
+            <li class="tab-link current" data-tab="tattoos">Tatuajes</li>
+            <li class="tab-link" data-tab="designs">Diseños</li>
+            <li class="tab-link" data-tab="paintings">Cuadros</li>
+        </ul>
+    
+        <div id="tattoos" class="tab-content current">
+            <div class="row">
+                <div class="col-lg-4 col-md-6"> <!-- Primera columna para dispositivos grandes y medianos -->
+                    <img src="img/tatuajes/goku.jpeg" alt="" class="img-fluid">
+                    <img src="img/tatuajes/boca.jpeg" alt="" class="img-fluid mt-4">
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 mt-md-0"> <!-- Segunda columna para dispositivos grandes y medianos -->
+                    <img src="img/tatuajes/demonio.jpeg" alt="" class="img-fluid">
+                    <img src="img/tatuajes/vegetaRastreador.jpeg" alt="" class="img-fluid mt-4">
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 mt-md-0"> <!-- Tercera columna para dispositivos grandes y medianos -->
+                    <img src="img/tatuajes/rosa.jpeg" alt="" class="img-fluid">
+                    <img src="img/tatuajes/geisha.jpeg" alt="" class="img-fluid mt-4">
+                </div>
+            </div>
+        </div>
+    
+        <div id="designs" class="tab-content">
+            <div class="row">
+                <div class="col-lg-4 col-md-6"> <!-- Primera columna para dispositivos grandes y medianos -->
+                    <img src="img/diseños/chinos.jpeg" alt="" class="img-fluid">
+                    <img src="img/diseños/varios.jpeg" alt="" class="img-fluid mt-4">
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 mt-md-0"> <!-- Segunda columna para dispositivos grandes y medianos -->
+                    <img src="img/diseños/flores.jpeg" alt="" class="img-fluid">
+                    <img src="img/diseños/letras.jpeg" alt="" class="img-fluid mt-4">
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 mt-md-0"> <!-- Tercera columna para dispositivos grandes y medianos -->
+                    <img src="img/diseños/anime.jpeg" alt="" class="img-fluid">
+                    <img src="img/diseños/flores.jpeg" alt="" class="img-fluid mt-4">
+                </div>
+            </div>
+        </div>
+    
+        <div id="paintings" class="tab-content">
+            <div class="row">
+                <div class="col-lg-4 col-md-6"> <!-- Primera columna para dispositivos grandes y medianos -->
+                    <img src="img/cuadros/duende.jpeg" alt="" class="img-fluid">
+                    <img src="img/cuadros/picolo.jpeg" alt="" class="img-fluid mt-4">
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 mt-md-0"> <!-- Segunda columna para dispositivos grandes y medianos -->
+                    <img src="img/cuadros/vegeta.jpeg" alt="" class="img-fluid">
+                    <img src="img/cuadros/frida.jpeg" alt="" class="img-fluid mt-4">
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4 mt-md-0"> <!-- Tercera columna para dispositivos grandes y medianos -->
+                    <img src="img/cuadros/macross.jpeg" alt="" class="img-fluid">
+                    <img src="img/cuadros/camus.jpeg" alt="" class="img-fluid mt-4">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+      <div>
+        <a class="btn btn-primary btn-shadow btn-lg" style="min-width: 200px; margin-top:20px; margin-bottom:20px;" href="./productos.html" role="button">Ver más</a>
+      </div>
+    </div>
+  </section>		
+  <!-- Reservation Section -->
+<section id="gtco-reservation" class="bg-fixed bg-white section-padding overlay" style="background-image: url(img/contacto.jpg); background-size: contain;">
+    <div class="container">
+        <div class="row mt-5 pt-3">
+            <div class="col-lg-5">
+                <div class="section-content bg-white p-5 shadow">
+                    <div class="heading-section text-center">
+                        <span class="subheading">
+                            Contacto
+                        </span>
+                        <h2>
+                            CONTACTANOS
+                        </h2>
+                    </div>
+                    <form id="myForm" method="post" name="contact-us" >
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Telefono">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <select class="form-control" id="selectPerson" >
+                                    <option></option>
+                                    <option>DISEÑO</option>
+                                    <option>TATUAJE</option>
+                                    <option>CUADRO</option>
+                                </select>
+                            </div>
+                 
+                            <div class="col-md-12 form-group">
+                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Mensaje ..."></textarea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Consultar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- End of Reservation Section -->		
+<footer class="mastfoot pb-5 bg-white section-padding pb-0">
+    <div class="inner container">
+         <div class="row ">
+         	<div class="col-lg-4 mt-5">
+         		<div class="footer-widget pr-lg-5 pr-0">
+         			<img src="img/logo1.png" class="img-fluid footer-logo mb-3" alt="">
+	         		<p>¡Si buscás un tatuaje de calidad en la costa, tenés que visitar Poseidón Tattoo! Nustros obras son increíbles para llevarlas tanto en la piel como en un cuadro.</p>
+	         		<nav class="nav nav-mastfoot justify-content-start">
+		                <a class="nav-link2" href="https://www.facebook.com/profile.php?id=100092586518423&mibextid=ZbWKwL">
+		                	<i class="fab fa-facebook-f"></i>
+		                </a>
+		                
+		                <a class="nav-link2" href="https://instagram.com/poseidon.tatto?igshid=OGQ5ZDc2ODk2ZA==">
+		                	<i class="fab fa-instagram"></i>
+		                </a>
+                        <a class="nav-link2" href="https://www.facebook.com/profile.php?id=100092586518423&mibextid=ZbWKwL">
+		                	<i class="fab fa-whatsapp"></i>
+		                </a>
+		            </nav>
+         		</div>
+         		
+         	</div>
+         	<div class="col-lg-4 mt-5">
+         		<div class="footer-widget px-lg-5 px-0">
+         			<h4>Horarios</h4>
+	         		<ul class="list-unstyled open-hours">
+		                <li class="d-flex justify-content-between"><span>Lunes</span><span>16:00 - 20:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Martes</span><span>16:00 - 20:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Miercoles</span><span>16:00 - 20:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Jueves</span><span>16:00 - 20:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Viernes</span><span>16:00 - 20:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Sabado</span><span>12:00 - 20:00</span></li>
+		                <li class="d-flex justify-content-between"><span>Domingo</span><span> Cerrado</span></li>
+		              </ul>
+         		</div>
+         		
+         	</div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+         	<div class="col-lg-4 mt-5">
+         		<div class="footer-widget pl-lg-5 pl-0">
+         			<h4>Boletín</h4>
+	         		<p>Registrate para recibir nuestras promos y ofertas.</p>
+	         		<form id="newsletter">
+						<div class="form-group">
+							<input type="email" class="form-control" id="emailNewsletter" aria-describedby="emailNewsletter" placeholder="Ingresar email">
+						</div>
+						<button type="submit" class="btn btn-primary w-100">Registrarme</button>
+					</form>
+         		</div>
+         	</div>
+        </div>
+    </div>
+</footer>	
+<a href="https://api.whatsapp.com/send?phone=+5491127278499&text=%20" class="float" target="_blank">
+    <i class="fab fa-whatsapp my-float"></i>
+    </a>
+</div>
+</div>
+	<!-- External JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js "></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js"></script>
+	<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+
+	<!-- Main JS -->
+	<script src="js/app.min.js "></script>
+    <script src="./js/tabs.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./js/formulario.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+</body>
 </html>
