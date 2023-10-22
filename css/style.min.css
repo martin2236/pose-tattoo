@@ -7,6 +7,16 @@
   
 }
 
+
+.ml-desktop-4 {
+    margin-left: 1.5rem !important; /* Establece el margen izquierdo en 1.5rem (equivalente a ml-4) */
+}
+
+/* Clase para eliminar el margen en dispositivos móviles */
+.ml-mobile-0 {
+    margin-left: 0;
+}
+
 .tab-link {
   cursor: pointer;
   padding: 10px 20px;
@@ -184,6 +194,12 @@ a:hover {
 
 .nav-link {
   color: #fff; }
+
+  @media (max-width: 992px) {
+    .nav-link {
+        color: #586782; /* Cambia el color a #586782 en pantallas menores de 993px */
+    }
+}
 
   .nav-link2 {
     color: #586782; 
