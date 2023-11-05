@@ -32,6 +32,7 @@
 
     <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 <body data-spy="scroll" data-target="#navbar">
@@ -173,20 +174,14 @@
          	</div>
 
          	<div class="col-lg-4 mt-5">
-         		<div class="footer-widget pl-lg-5 pl-0">
-         			<h4>Boletín</h4>
-	         		<p>Registrate para recibir nuestras promos y ofertas. </p>
-	         		<form id="newsletter">
-						<div class="form-group">
-							<input type="email" class="form-control" id="emailNewsletter" aria-describedby="emailNewsletter" placeholder="Ingresar email">
-						</div>
-						<button type="submit" class="btn btn-primary w-100">Registrarme</button>
-					</form>
+         		<div class="pl-lg-5 pl-0">
+         			<h4>Como llegar</h4>
+                     <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3197.47408834505!2d-56.69204092532286!3d-36.73518997316794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzbCsDQ0JzA3LjMiUyA1NsKwNDEnMjEuOCJX!5e0!3m2!1sen!2sar!4v1699223586711!5m2!1sen!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          		</div>
          	</div>
         </div>
     </div>
-</footer>	
+</footer>
 <a href="https://api.whatsapp.com/send?phone=+5491127278499&text=%20" class="float" target="_blank">
     <i class="fab fa-whatsapp my-float"></i>
     </a>
@@ -205,6 +200,7 @@
 
 	<!-- Main JS -->
 	<script src="js/app.min.js "></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./js/formulario.js"></script>
 </body>
 </html>

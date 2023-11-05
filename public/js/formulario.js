@@ -1,6 +1,5 @@
 (function main() {
     const form = document.getElementById('myForm');
-
     form.addEventListener('submit', (event) => {
         event.preventDefault();
 
@@ -40,9 +39,7 @@
 })();
 
  function enviarEmail (data){
-
-    console.log(data);
-
+    console.log({data})
     var templateParams = {
         from_name: data.email,
         nombre: data.cliente,
